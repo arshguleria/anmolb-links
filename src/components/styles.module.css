@@ -16,13 +16,18 @@
 .avatar {
     height: 70px;
     width: 70px;
+    font-size: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: url("https://image.typedream.net/cdn-cgi/image/width=3840,quality=100/https://api.typedream.com/v0/document/public/8bd6caf2-6ea7-4a61-8ed7-ebeead4e5580/2NfjYzn4a3OFA12xkx38eHPqPYt_Profile.jpeg");
-    background-size: 100%;
+}
+
+.avatar img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .title_container {
