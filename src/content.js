@@ -45,7 +45,7 @@ export const SHORT_CARDS = [
     button_label: 'Watch it here',
     button_url: 'https://youtu.be/HLETVs-xozM',
     image: '',
-    video: ''
+    video: './assets/nomo.mp4'
   }
 ]
 
