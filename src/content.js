@@ -24,8 +24,8 @@ export const LONG_CARDS = [
     id: 2,
     title: 'My 3-part SEO Blog Series for Designers, Content Writers and Engineers.',
     button_label: 'SEO for Designers',
-    button_url: 'https://medium.com/@anmolbansal7/demystifying-seo-the-design-way-1-3-788d89995b45',
-    image: './assets/medium.jpg',
+    button_url: 'https://medium.com/@anmolbansal7/demystifying-seo-for-designers-1-3-788d89995b45',
+    image: './assets/medium.png',
     video: ''
   }
 ]
