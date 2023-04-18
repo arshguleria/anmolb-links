@@ -1,48 +1,49 @@
 export const HEADER = {
-  profile_url: 'https://image.typedream.net/cdn-cgi/image/width=3840,quality=100/https://api.typedream.com/v0/document/public/8bd6caf2-6ea7-4a61-8ed7-ebeead4e5580/2NfjYzn4a3OFA12xkx38eHPqPYt_Profile.jpeg',
+  profile_url: './assets/profile.jpeg',
   profile_alt: 'Profile Image',
   heading: 'Anmol Bansal | Software Developer',
   sub_heading: 'SDE at Cogoport, Mumbai',
   links: {
-    instagram: 'something',
-    twitter: 'something twi',
-    linkedin: 'some link'
+    instagram: 'https://instagram.com/anmollbansall',
+    twitter: 'https://twitter.com/anmollbansall',
+    linkedin: 'https://www.linkedin.com/in/anmolbansal7/',
+    github: 'https://github.com/anmolbansal7'
   }
 }
 
 export const LONG_CARDS = [
   {
     id: 1,
-    title: 'Some Long Content 1',
-    button_label: 'Button Label 1',
-    button_url: '',
+    title: 'I occasionally edit and creatively curate reels.',
+    button_label: "Here's my latest reel",
+    button_url: 'https://www.instagram.com/reel/CqSiQT7vb2c/?igshid=YmMyMTA2M2Y=',
     image: '',
-    video: ''
+    video: './assets/reel.mp4'
   },
   {
     id: 2,
-    title: 'Some Long Content 2',
-    button_label: 'Button Label 2',
-    button_url: '',
-    image: '',
+    title: 'My 3-part SEO Blog Series for Designers, Content Writers and Engineers.',
+    button_label: 'SEO for Designers',
+    button_url: 'https://medium.com/@anmolbansal7/demystifying-seo-the-design-way-1-3-788d89995b45',
+    image: './assets/medium.jpg',
     video: ''
   }
 ]
 
 export const SHORT_CARDS = [
   {
-    id: 1,
-    title: 'Some Long Content 1',
-    button_label: 'Button Label 1',
-    button_url: '',
-    image: '',
+    id: 3,
+    title: 'Cogoport is my workplace.',
+    button_label: 'Discover what they offer',
+    button_url: 'https://www.cogoport.com/en-IN',
+    image: './assets/cogoport.jpg',
     video: ''
   },
   {
-    id: 2,
-    title: 'Some Long Content 2',
-    button_label: 'Button Label 2',
-    button_url: '',
+    id: 4,
+    title: 'I created an intriguing Short Film a while back.',
+    button_label: 'Watch it here',
+    button_url: 'https://youtu.be/HLETVs-xozM',
     image: '',
     video: ''
   }

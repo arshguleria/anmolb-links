@@ -3,16 +3,32 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import styles from './styles.module.css'
 
+import { LONG_CARDS, SHORT_CARDS } from './content.js'
+
 function App () {
   return (
-    <div className={styles.container}>
-     {/* Top Div which includes Avatar, Headline, Sub Headline, and Icons */}
-     <Header/>
-     {/* Video Cards */}
-     <Card/>
-     {/* Footer */}
-     <Footer/>
-    </div>
+        <div className={styles.container}>
+
+            <Header />
+
+            <div className={styles.card_container}>
+
+                {LONG_CARDS.map((item) => (
+                    <Card key={item.id} length="long" item={item} />
+                ))}
+
+                <div className={styles.card_container_right}>
+
+                    {SHORT_CARDS.map((item) => (
+                        <Card key={item.id} length="small" item={item} />
+                    ))}
+
+                </div>
+            </div>
+
+            <Footer />
+
+        </div>
   )
 }
 

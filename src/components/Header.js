@@ -1,9 +1,10 @@
 /* eslint-disable camelcase */
 import {
-  IcMInstagramLogo,
-  IcMLinkedinLogo,
-  IcMTwitter
-} from '@cogoport/icons-react'
+  FaTwitter,
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram
+} from 'react-icons/fa'
 import styles from './styles.module.css'
 import { HEADER } from '../content'
 
@@ -16,13 +17,13 @@ function Header () {
     links = {}
   } = HEADER
 
-  const width = 30
-  const height = 30
+  const size = 30
 
   const LINKS_MAPPING = {
-    instagram: <IcMInstagramLogo width={width} height={height} />,
-    linkedin: <IcMLinkedinLogo width={width} height={height} />,
-    twitter: <IcMTwitter width={width} height={height} />
+    instagram: <FaInstagram size={size} />,
+    linkedin: <FaLinkedinIn size={size} />,
+    twitter: <FaTwitter size={size} />,
+    github: <FaGithub size={size} />
   }
 
   return (
@@ -40,7 +41,7 @@ function Header () {
 
             <div className={styles.social}>
                 {Object.keys(links).map((key, index) => (
-                    <a href={links[key]} alt={key} key={key}>
+                    <a href={links[key]} alt={key} key={key} target='_blank' rel='noreferrer'>
                         {LINKS_MAPPING[key]}
                     </a>
                 ))}
