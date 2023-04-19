@@ -33,7 +33,7 @@ function Header () {
                     <img src={profile_url} alt={profile_alt}></img>
                 </div>
 
-                <div>
+                <div className={styles.title_container}>
                     <div className={styles.title}>{heading}</div>
                     <div className={styles.subtitle}>{sub_heading}</div>
                 </div>
